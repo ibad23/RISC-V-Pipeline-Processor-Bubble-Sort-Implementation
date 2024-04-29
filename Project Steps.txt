@@ -1,0 +1,100 @@
+Task 1.
+
+-Starting Single Cycle:
+
+-Made the single cycle ; Lab 11
+-Make sure its working on the existing 4 instructions
+-Made changes in Single Cycle
+--ALU64: Added slli support
+--ALU_Control: Added slli support
+--Branch_Unit: Made a new module for support of beq, blt and beg instructions. The module basically handles the PCSrc now as ZERO is not enough anymore.
+--Data_Memory: Inserted some values that should hopefully get sorted
+--Imm_Gen: Added SB type support
+--Instruction_Memory: Added the converted Bubble Sort code, changed syntax quite a bit
+--Top: Added Branch_Unit module and a new variable Branch Select
+--RegisterFile: Initialized everything to zero.
+--testbench: clock changes every 3ns.
+
+-Code:
+-Bubble Sort checked for test cases
+-Code converted into binary and loaded into Instruction_Memory
+
+-Ran into Single Cycle and make sure array is being sorted correctly.
+
+Task 2.
+
+-Starting Pipeline:
+
+-Testbench remains the same
+-Register File remains the same
+-ALU_Control remains the same
+-Program_Counter remains the same
+-Instruction Parser remains the same
+-Imm_Gen remains the same as we have support for SB-Type
+-Instruction Memory remains the same (changes when testing cases ; 1 instruction only)
+-Branch_Unit remains the same 
+-Data_Memory remains the same (loaded the array values unsorted)
+
+-Top would change, as we would need to call the new Modules
+
+IF_ID ; ID_EX ; EX_MEM ; MEM_WB -> Eman Modules
+
+Calling the four Pipeline Registers in Top Module and connecting all their wires.
+
+Checking all different types of instructions to check if everything is working perfectly.
+
+While checking for each instruction, we checked that MemtoReg was not working as intended and was giving us a Z value.
+After doing a lot of debugging we found that we had named the variable name wrong.
+Debugging was through checking each MemtoReg after each Pipeline Register and checking if it has the same data as the previous Register.
+
+Checked all these Instruction and all works fine for a single instruction.
+add, sub, ld, sd, slli, addi, beq, blt
+
+All instructions work fine. Pipelining Done!
+
+Task 3.
+
+Forwarding_Unit ; Hazard_Detection_Unit ; Mux_3x1 -> Ibad Modules
+
+Forwarding Logic is for Data Hazards : Figure 4.55 and Figure 7.55 (pg 469)
+
+Forwarding Unit was easy to make, and easy to call in the Top as well.
+
+The problem was the third stall problem, first two instructions were fine and dealt with through Forwarding, the third instruction which also causes the data hazard was not being implemented.
+For that we had to change the Register_File and have negedge clk instead of posedge.
+This ensures data will be written first, and then it will be read in one clock cycles.
+This eliminates the third instruction problem.
+
+Now only Control and Load Use Data Hazard remains which would be solved using Hazard_Detection_Unit.
+
+Load Use Data Hazard done by implementing Hazard_Detection_Unit.
+
+-Control_Unit now contains the Mux which stalls by introducing nop.
+-Program_Counter has PCWrite which delays the clock cycle by preserving the same values.
+-IF_ID has IFWrite which delays the clock cycle by preserving the same values.
+
+-Top calls the Hazard_Detection_Unit and make appropiate connections.
+
+Control Hazard remains.
+
+-Vivado crashes..
+
+-Flush implemented,
+
+-Vivado keeps crashing now.
+
+-Branch instruction are not working properly, needs to force the value of PC to zero after the reset.
+
+-Made changes in our code but couldn't figure out why Branch isn't working properly. Starting again from LoadUse Data Hazard.
+
+Started from Load Use Data Hazard, twice.
+
+-Calculated Zero and Is_Greater correctly for beq and blt instructions
+-Gave Flush to all three Pipelines which is the same as the Branch Mux Select line
+-Calculated Final_Branch_Mux through Funct3[3] if blt then 1, else 0. and Through that, implemented Flushing
+-Checked cases for beq and blt and everything.
+
+Whole Project done now. 
+Final Bubble Sorting Code works perfectly with a lot less Cycles.
+
+Task 4: Comparision of Single Cycle and Pipeline Cycle through Clock Cycles and Time.

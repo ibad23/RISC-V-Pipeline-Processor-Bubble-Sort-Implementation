@@ -1,0 +1,373 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Apr 20 21:39:14 2024
+# Process ID: 10420
+# Current directory: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14064 D:\OneDrive - Habib University\Semester 4\CA\Project\Pipelined Processor\Pipelined Processor.xpr
+# Log file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/vivado.log
+# Journal file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 1004.852 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RISCVSC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_RISCVSC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/RISCV_PipelinedProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_SCProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_RISCVSC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1004.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xelab -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mux_2x1
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU64
+Compiling module xil_defaultlib.Branch_Unit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.RISCV_SCProcessor
+Compiling module xil_defaultlib.testbench_RISCVSC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_RISCVSC_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1004.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_RISCVSC_behav -key {Behavioral:sim_1:Functional:testbench_RISCVSC} -tclbatch {testbench_RISCVSC.tcl} -view {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:46 . Memory (MB): peak = 1004.852 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_RISCVSC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1004.852 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1172.785 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RISCVSC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_RISCVSC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/RISCV_PipelinedProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_SCProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_RISCVSC
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.785 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xelab -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mux_2x1
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU64
+Compiling module xil_defaultlib.Branch_Unit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.RISCV_SCProcessor
+Compiling module xil_defaultlib.testbench_RISCVSC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_RISCVSC_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1172.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1172.785 ; gain = 0.000
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 1172.785 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:01:19 . Memory (MB): peak = 1172.785 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RISCVSC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_RISCVSC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/RISCV_PipelinedProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_SCProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_RISCVSC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xelab -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mux_2x1
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU64
+Compiling module xil_defaultlib.Branch_Unit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.RISCV_SCProcessor
+Compiling module xil_defaultlib.testbench_RISCVSC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_RISCVSC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1172.785 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RISCVSC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_RISCVSC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/RISCV_PipelinedProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_SCProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_RISCVSC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.sim/sim_1/behav/xsim'
+"xelab -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8b3ce33a0a8042c78aaa2f6e6522aeeb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_RISCVSC_behav xil_defaultlib.testbench_RISCVSC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/ALU64.v" Line 1. Module ALU64 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mux_2x1
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU64
+Compiling module xil_defaultlib.Branch_Unit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.RISCV_SCProcessor
+Compiling module xil_defaultlib.testbench_RISCVSC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_RISCVSC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1172.785 ; gain = 0.000
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1172.785 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:53 . Memory (MB): peak = 1172.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_3x1.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_3x1.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Hazard_Detection.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Hazard_Detection.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Forwarding_Unit.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Forwarding_Unit.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 03:05:06 2024...

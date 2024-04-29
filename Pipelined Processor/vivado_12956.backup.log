@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Apr 19 18:31:18 2024
+# Process ID: 12956
+# Current directory: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6152 D:\OneDrive - Habib University\Semester 4\CA\Project\Pipelined Processor\Pipelined Processor.xpr
+# Log file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/vivado.log
+# Journal file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1001.512 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 20 00:26:15 2024...

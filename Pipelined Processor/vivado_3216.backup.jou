@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Apr 26 09:12:01 2024
+# Process ID: 3216
+# Current directory: C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17400 C:\Users\mi08440\OneDrive - Habib University\Semester 4\CA\Pipelined Processor Till LoadUse Hazard2\Pipelined Processor.xpr
+# Log file: C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/vivado.log
+# Journal file: C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/Pipelined Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {C:/Users/mi08440/OneDrive - Habib University/Semester 4/CA/Pipelined Processor Till LoadUse Hazard2/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+relaunch_sim
+close_sim

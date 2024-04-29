@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Apr 26 22:45:06 2024
+# Process ID: 6208
+# Current directory: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1412 D:\OneDrive - Habib University\Semester 4\CA\Project\Pipelined Processor\Pipelined Processor.xpr
+# Log file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/vivado.log
+# Journal file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCV_Pipeline.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench_RISCV_Single [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RISCV_SingleProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCV_Single.tcl
+save_wave_config {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench_RISCV_Pipeline [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RISCV_PipelineProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1

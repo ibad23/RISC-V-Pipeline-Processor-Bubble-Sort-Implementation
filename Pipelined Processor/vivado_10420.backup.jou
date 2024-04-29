@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Apr 20 21:39:14 2024
+# Process ID: 10420
+# Current directory: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14064 D:\OneDrive - Habib University\Semester 4\CA\Project\Pipelined Processor\Pipelined Processor.xpr
+# Log file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/vivado.log
+# Journal file: D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/testbench_RISCVSC_behav.wcfg}
+source testbench_RISCVSC.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_3x1.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Mux_3x1.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Hazard_Detection.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Hazard_Detection.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Forwarding_Unit.v} w ]
+add_files {{D:/OneDrive - Habib University/Semester 4/CA/Project/Pipelined Processor/Pipelined Processor.srcs/sources_1/new/Forwarding_Unit.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
