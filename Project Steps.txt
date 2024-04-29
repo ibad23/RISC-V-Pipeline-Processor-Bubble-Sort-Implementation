@@ -97,4 +97,19 @@ Started from Load Use Data Hazard, twice.
 Whole Project done now. 
 Final Bubble Sorting Code works perfectly with a lot less Cycles.
 
-Task 4: Comparision of Single Cycle and Pipeline Cycle through Clock Cycles and Time.
+Task 4: Comparison of Single Cycle and Pipeline Cycle through Clock Cycles and Time.
+
+Single Cycle:
+Clock Cycle Time = 2.5ns
+Execution Time = 500ns
+Clock Cycles = 200cc
+
+Pipeline:
+Clock Cycle Time =0.5ns
+Execution Time = 145ns
+Clock Cycles = 290cc
+
+Speed Up:
+ExTimeSC / ExTimePP = 500 / 145 = 3.448
+
+Pipeline Processor is 3.448 times faster than Single Cycle Processor.
